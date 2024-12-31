@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Icône circulaire */
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    font-size: 120px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle i {
+    line-height: 1;
+}
+
+
+/* Conteneur de connexion */
+/* Style pour aligner les labels et les inputs sur la même ligne */
+.login-container h1 {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container form label {
+    width: 40%; /* Largeur fixe pour les labels */
+    text-align: left;
+    margin-left: 10px;
+}
+
+.login-container form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.login-container input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-container button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: none;
+}
